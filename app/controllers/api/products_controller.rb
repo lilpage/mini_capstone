@@ -34,11 +34,11 @@ class Api::ProductsController < ApplicationController
   end
 
   def destroy
-    @product = Product.find_by(params[:id])
-    if @product.destroy
+    product = Product.find_by(id: params[:id])
+    if product.destroy
       render json: {message: "Successfully deleted!"} #add which was deleted?
     else
-      render json: {errors: @product.errors.full_messages}, status: 406
+      render json: {errors: product.errors.full_messages}, status: 406
     end
   end
 
