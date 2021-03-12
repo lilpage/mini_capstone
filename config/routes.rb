@@ -15,5 +15,10 @@ Rails.application.routes.draw do
     get "/suppliers/:id" => "suppliers#show"
     patch "/suppliers/:id" => "suppliers#update"
     delete "/suppliers/:id" => "suppliers#destroy"
+
+    get "/users/:id" => "users#show"
+    post "/users" => "users#create"
+
+    post "/sessions" => "sessions#create"
   end
 end
