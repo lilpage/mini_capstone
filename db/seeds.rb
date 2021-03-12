@@ -15,3 +15,6 @@ product = Product.create({ name: "poison dart frogs", description: "NOT FOR HUMA
 
 supplier = Supplier.create({ name: "Frogs R We", email: "frogsrwe@example.com", phone_number: "555-555-5555"})
 supplier = Supplier.create({ name: "The Toad Experts", email: "tte@example.com", phone_number: "555-000-0000"})
+
+category = Category.create(category: "Frogs" )
+category = Category.create(category: "Toads" )
